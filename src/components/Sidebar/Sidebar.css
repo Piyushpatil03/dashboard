@@ -1,0 +1,109 @@
+.col{
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  height: 100vh;
+  transition: all 0.4s ease;
+}
+
+.sidebar {
+  display: block;
+  width: 300px;
+  background-color: rgb(38, 38, 38); 
+}
+
+.top_head{
+  display: flex;
+  justify-content: space-between;
+}
+
+.navigation{
+  display: block;
+  width: 300px;
+  background-color: rgb(38, 38, 38);
+  height: 700px;
+}
+
+.selected{
+  color: aqua;
+}
+
+.heading{
+  color: rgb(63, 125, 0);
+  margin: 30px 20px;
+  font-size: 20px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+.logo{
+  margin: 30px 20px;
+}
+
+.toggle-btn{
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  margin: 10px;
+}
+
+.icon{
+  width: 25px;
+  height: 2px;
+  background-color: white;
+  margin: 6px 0;
+}
+
+.icon-2{
+  width: 25px;
+  height: 2px;
+  background-color: black;
+  margin: 6px 0;
+}
+
+a{
+  text-decoration: none !important;
+  font-size: 15px;
+  color: white !important;
+}
+
+
+a.active{
+  color:chartreuse !important;
+}
+
+li{
+  list-style-type: none;
+  margin: 20px 0px;
+}
+
+.hamburger{
+  display: none;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+
+}
+
+@media screen and (max-width: 1240px) {
+  .col{
+    display: none;
+  }
+
+  .col.open{
+    display: flex;
+    z-index: 1;
+  }
+
+  .hamburger{
+    margin: 10px;
+    display: inline-block;
+  }
+
+  .hamburger.open{
+    display: none;
+  }
+}

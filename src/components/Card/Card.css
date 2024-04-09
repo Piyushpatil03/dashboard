@@ -1,0 +1,9 @@
+.card{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.468);
+    margin: 10px;
+}
+
+.card-text{
+    font-size: 16px;
+    font-weight: 600;
+}
